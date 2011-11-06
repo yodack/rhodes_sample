@@ -1,0 +1,35 @@
+<div data-role="page" data-add-back-btn="true">
+
+  <div data-role="header" data-position="inline">
+    <%= link_to "Back", :action => :index %>
+    <h1><%= @bcard.address %></h1>
+    <%= link_to "Edit", :action => :edit, :id => @bcard.object %>
+  </div>
+
+  <div data-role="content">
+    <table>
+      
+      <tr>
+    	<td class="itemLabel">Address</td>
+        <td class="itemValue"><%= @bcard.address%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Name</td>
+        <td class="itemValue"><%= @bcard.name%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Email</td>
+        <td class="itemValue"><%= @bcard.email%></td>
+      </tr>
+      
+      <tr>
+    	<td class="itemLabel">Company</td>
+        <td class="itemValue"><%= @bcard.company%></td>
+      </tr>
+      
+    </table>
+  </div>
+
+</div>
